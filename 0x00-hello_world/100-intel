@@ -1,5 +1,2 @@
 #!/bin/bash
-cfile=$CFILE
-gcc -S -masm=intel $cfile
-mv ${cfile%.c}.s ${cfile%.*}.s
-
+gcc -S -masm=intel -o "${CFILE%.c}.s" "$CFILE"
