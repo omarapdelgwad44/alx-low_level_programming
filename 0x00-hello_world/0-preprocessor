@@ -1,0 +1,4 @@
+#!/bin/bash
+cfile=$CFILE
+gcc -E $cfile -o c
+tail c
