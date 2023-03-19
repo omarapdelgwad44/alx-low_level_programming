@@ -25,8 +25,6 @@ x=j;
 lucy = false;
 goto natsu;
 }
-putchar(j / 10 + '0');
-putchar(j % 10 + '0');
 }
 }
 }
