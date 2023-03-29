@@ -22,5 +22,4 @@ char *_strcat(char *dest, char *src)
 
     /* Return a pointer to the resulting string */
     return dest;
-}
- 
+} 
