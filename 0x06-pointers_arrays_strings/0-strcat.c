@@ -1,14 +1,26 @@
-#include "main.h"                                                                                                                  
-#include <unistd.h>                                                                                                                     
-                                                                                                                                        
-/**                                                                                                                                     
- * _putchar - writes the character c to stdout                                                                                          
- * @c: The character to print                                                                                                           
- *                                                                                                                                      
- * Return: On success 1.                                                                                                                
- * On error, -1 is returned, and errno is set appropriately.                                                                            
- */                                                                                                                                     
-int _putchar(char c)                                                                                                                    
-{                                                                                                                                       
-        return (write(1, &c, 1));                                                                                                       
-}                             
+/**
+ * _strcat - Concatenates two strings.
+ * @dest: Pointer to the destination string.
+ * @src: Pointer to the source string.
+ *
+ * Return: Pointer to the resulting string dest.
+ */
+char *_strcat(char *dest, char *src)
+{
+    int i, j;
+
+    /* Find the end of the destination string */
+    for (i = 0; dest[i] != '\0'; i++)
+        ;
+
+    /* Append the source string to the destination string */
+    for (j = 0; src[j] != '\0'; j++)
+        dest[i + j] = src[j];
+
+    /* Add the terminating null byte */
+    dest[i + j] = '\0';
+
+    /* Return a pointer to the resulting string */
+    return dest;
+}
+ 
