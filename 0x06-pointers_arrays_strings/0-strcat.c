@@ -1,4 +1,3 @@
-julien@ubuntu:~/c/curriculum_by_julien/holbertonschool-low_level_programming/0x06$ cat 0-main.c
 #include "holberton.h"
 #include <stdio.h>
 
